@@ -1,7 +1,28 @@
 :root{
-    --primary-color: #1e67a7;
+    --background-color: #111210;
+    --primary-color: #5eb9f0;
+    --paragrapg-color: #60697b;
+    --heading-color:#343f52;
+    --skyblue: #e5f4fd;
+    --white: #FFFFFF
+
 }
 
 body{
+    background-color: var(--background-color);
     font-family: "Ubuntu", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: var(--white);
+    padding: 10px;
+
 }
