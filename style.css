@@ -18,6 +18,15 @@ body{
     font-family: "Ubuntu", sans-serif;
 }
 
+footer {
+
+    margin-bottom: 60px;
+
+    & h3 {
+        margin: 10px 0;
+    }
+}
+
 h1 {
     color: var(--skyblue);
     font-size: 43px;
@@ -81,7 +90,6 @@ p {
 
     & a {
         margin: 8px 0;
-        
     }
 
     & img {
@@ -121,10 +129,17 @@ p {
 
 }
 
+.separator {
+    border-top: 1px solid var(--paragrapg-color);
+    height: 1px;
+    padding: 0;
+    margin: 30px auto 30px auto;
+
+}
 /* Tecnologys Styles */
 .tecnology {
     & h2 {
-        margin-bottom: 5px;
+        margin: 5px 0;
     }
 
     & span {
