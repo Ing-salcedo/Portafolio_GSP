@@ -1,8 +1,8 @@
 :root{
-    --background-color: #bdc3c7;
-    --heading-color: #2c3e50;
-    --primary-color: #5eb9f0;
-    --paragrapg-color: #60697b;
+    --background-color: #0e1214;
+    --heading-color: #5e89b4;
+    --primary-color: #1b4c9d;
+    --paragrapg-color: #757a83;
     --skyblue: #e5f4fd;
     --white: #ffffff;
 }
@@ -37,7 +37,7 @@ h3 {
 }
 
 main {
-    max-width: 1280px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -55,12 +55,24 @@ p {
     background-color: var(--primary-color);
     border-radius: 10px;
     color: var(--white);
-    display: block;
+    display: flex;
+    gap: 5px;
     padding: 10px;
     text-decoration: none;
     width: fit-content;
 }
 
+.footer-contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    & .img-mail {
+        width: 20px;
+    }
+}
+
+/* hero Styles */
 .hero {
     display: flex;
     gap: 30px;
@@ -81,14 +93,17 @@ p {
         display: flex;
         align-items: center;
     }
+
     & .hero-contact {
         display: flex;
         align-items: center;
         gap: 10px;
     }
+
+    & .img-mail {
+        width: 20px;
+    }
 }
-
-
 
 .icon {
     width: 30px;
@@ -110,6 +125,22 @@ p {
 .tecnology {
     & h2 {
         margin-bottom: 5px;
+    }
+
+    & span {
+        align-items: center;
+        background-color: #757a832a;
+        border-radius: 20px;
+        color: var(--paragrapg-color);
+        display: inline-flex;
+        gap: 7px;
+        margin: 0 5px;
+        padding: 10px 15px;
+        width: fit-content;
+
+        & img {
+            width: 25px;
+        }
     }
 }
 
