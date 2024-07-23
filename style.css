@@ -1,16 +1,10 @@
 :root{
-    --background-color: #111210;
+    --background-color: #bdc3c7;
+    --heading-color: #2c3e50;
     --primary-color: #5eb9f0;
     --paragrapg-color: #60697b;
-    --heading-color:#343f52;
     --skyblue: #e5f4fd;
-    --white: #FFFFFF
-
-}
-
-body{
-    background-color: var(--background-color);
-    font-family: "Ubuntu", sans-serif;
+    --white: #ffffff;
 }
 
 * {
@@ -19,10 +13,107 @@ body{
     padding: 0;
 }
 
+body{
+    background-color: var(--background-color);
+    font-family: "Ubuntu", sans-serif;
+}
+
+h1 {
+    color: var(--skyblue);
+    font-size: 43px;
+    line-height: 50px;
+}
+
+h2 {
+    color: var(--heading-color);
+    font-size: 33px;
+    line-height: 50px;
+}
+
+h3 {
+    color: var(--heading-color);
+    font-size: 23px;
+    line-height: 32px;
+}
+
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+p {
+    color: var(--paragrapg-color);
+    font-size: 17px;
+    line-height: 29px;
+}
+
+.about-me {
+    margin: 20px auto;
+}
+
 .btn-primary{
     background-color: var(--primary-color);
     border-radius: 10px;
     color: var(--white);
+    display: block;
     padding: 10px;
+    text-decoration: none;
+    width: fit-content;
+}
 
+.hero {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    margin-top: 50px;
+
+    & a {
+        margin: 8px 0;
+        
+    }
+
+    & img {
+        max-width: 150px;
+        border-radius: 25% 10%;
+    }
+
+    & p {
+        display: flex;
+        align-items: center;
+    }
+    & .hero-contact {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+
+
+.icon {
+    width: 30px;
+}
+
+/* Projects Styles */
+.projects {
+    margin-top: 15px;
+}
+
+.projects-item {
+    & h3 {
+        margin-bottom: 10px;
+    }
+
+}
+
+/* Tecnologys Styles */
+.tecnology {
+    & h2 {
+        margin-bottom: 5px;
+    }
+}
+
+/* Training Styles */
+.training {
+    margin: 15px 0px;
 }
