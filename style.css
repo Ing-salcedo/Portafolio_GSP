@@ -3,6 +3,7 @@
     --heading-color: #5e89b4;
     --primary-color: #1b4c9d;
     --paragrapg-color: #757a83;
+    --shadow-color: #757a832a;
     --skyblue: #e5f4fd;
     --white: #ffffff;
 }
@@ -19,7 +20,6 @@ body{
 }
 
 footer {
-
     margin-bottom: 60px;
 
     & h3 {
@@ -71,9 +71,15 @@ p {
     width: fit-content;
 }
 
-.footer-contact {
+.check {
     display: flex;
     align-items: center;
+    /* justify-content: center; */
+}
+
+.footer-contact {
+    align-items: center;
+    display: flex;
     gap: 10px;
 
     & .img-mail {
@@ -117,6 +123,13 @@ p {
     width: 30px;
 }
 
+.logo {
+    padding: 8px;
+    margin: 10px 0;
+    width: 70px;
+    background-color: var(--skyblue);
+    border-radius: 20% 20%;
+}
 /* Projects Styles */
 .projects {
     margin-top: 15px;
@@ -144,8 +157,9 @@ p {
 
     & span {
         align-items: center;
-        background-color: #757a832a;
+        background-color: var(--shadow-color);
         border-radius: 20px;
+        box-shadow: 1px 0.1rem 0.1rem 0px;
         color: var(--paragrapg-color);
         display: inline-flex;
         gap: 7px;
@@ -162,4 +176,36 @@ p {
 /* Training Styles */
 .training {
     margin: 15px 0px;
+}
+
+.training-item {
+    align-items: center;
+    background-color: var(--shadow-color);
+    border-radius: 10px;
+    box-shadow: 1px 0.1rem 0.5rem 0px;
+    display: grid;
+    gap: 7px;
+    grid-template-columns: repeat(4, 1fr);
+    height: 110px;
+    padding: 10px;
+    
+    & a {
+        display: flex;
+        flex-direction: column;
+        width: 165px;
+    }
+
+    & h3 {
+        width: 420px;
+    }
+
+    & p {
+        width: 350px;
+    }
+}
+
+.trainning-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
